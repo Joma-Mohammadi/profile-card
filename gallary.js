@@ -29,7 +29,7 @@ const nextBtn = document.getElementById('next-btn');
 let currentIndex = 0;
 let isOpen = false;
 
-// Build gallery dynamically
+
 function buildGallery() {
   images.forEach((src, i) => {
     const img = document.createElement('img');
@@ -42,7 +42,7 @@ function buildGallery() {
   });
 }
 
-//code open modal
+
 function openModal(index) {
   currentIndex = index;
   isOpen = true;
@@ -56,7 +56,7 @@ function openModal(index) {
   closeBtn.focus();
 }
 
-// code close modal
+
 function closeModal() {
   isOpen = false;
   modalContent.classList.add('scale-95', 'opacity-0');
@@ -66,7 +66,7 @@ function closeModal() {
   }, 180);
 }
 
-// code update modal content
+
 function updateModal() {
   modalImage.src = images[currentIndex];
   slider.innerHTML = '';
@@ -90,7 +90,7 @@ function updateModal() {
   if (activeThumb) activeThumb.scrollIntoView({ inline: 'center', behavior: 'smooth' });
 }
 
-// code keyboard controls
+
 function handleKey(e) {
   if (!isOpen) return;
   if (e.key === 'Escape') closeModal();
