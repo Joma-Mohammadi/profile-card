@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white shadow-lg rounded-2xl p-6 w-96">
+    <h1 class="text-xl font-bold mb-4 text-center">Todo List</h1>
+
+    <!-- code section button and input -->
+    <div class="flex mb-4">
+      <input id="task-input" 
+             type="text" 
+             placeholder="New task..." 
+             class="flex-1 border rounded-l-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <button id="add-Btn" 
+              class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600">
+        Add
+      </button>
+    </div>
+
+    <!--  task list -->
+    <ul id="task-List" class="space-y-2"></ul>
+  </div>
+
+ 
+</body>
+</html>
+ <!-- flie script-->
+  <script src="list.js"></script>
