@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Calculator</title>
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-blue-100 flex items-center justify-center p-4">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-full max-w-xs">
+      <!-- Display -->
+      <div
+        id="display"
+        class="bg-gray-100 h-16 mb-4 rounded-lg flex items-center justify-end px-3 text-2xl font-bold text-gray-800"
+      >
+        00
+      </div>
+
+      <!-- Buttons -->
+      <div class="grid grid-cols-4 gap-2">
+        <button class="btn bg-red-300 shadow-lg" data-action="clear">C</button>
+        <button class="btn bg-blue-200 shadow" data-value="/">÷</button>
+        <button class="btn bg-blue-200 shadow" data-value="*">×</button>
+        <button class="btn bg-yellow-200 shadow" data-action="equals">=</button>
+
+        <button class="btn bg-gray-200 shadow" data-value="7">7</button>
+        <button class="btn bg-gray-200 shadow" data-value="8">8</button>
+        <button class="btn bg-gray-200 shadow" data-value="9">9</button>
+        <button class="btn bg-blue-200 shadow" data-value="-">-</button>
+
+        <button class="btn bg-gray-200 shadow" data-value="4">4</button>
+        <button class="btn bg-gray-200 shadow" data-value="5">5</button>
+        <button class="btn bg-gray-200 shadow" data-value="6">6</button>
+        <button class="btn bg-blue-200 shadow" data-value="+">+</button>
+
+        <button class="btn bg-gray-200 shadow" data-value="1">1</button>
+        <button class="btn bg-gray-200 shadow" data-value="2">2</button>
+        <button class="btn bg-gray-200 shadow" data-value="3">3</button>
+        <button class="btn bg-gray-200 shadow" data-value="0">0</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./calculater.js"></script>
